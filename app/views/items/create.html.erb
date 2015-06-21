@@ -1,0 +1,9 @@
+
+Create New Item:
+
+<%= form_for @new_item do |f| %>
+  <%= f.text_field :name, placeholder: "Item name" %>
+  $<%= f.number_field :price, placeholder: "Item price" %>
+  <%= f.file_field :picture %>
+  <%= f.submit %>
+<% end %>
